@@ -1,3 +1,26 @@
+
+function rot13(str) { // LBH QVQ VG!
+    var newStr = [];
+    for (var i = 0; i < str.length; i++) {
+        newStr[i] = str.charCodeAt(i); // letters to num
+    }
+    var x = [];
+    for(var i = 0; i < newStr.length; i++){//converting formula
+    if (newStr[i] <= 77 && > 65){
+       x[i] = newStr[i] + 13;
+    }else{
+        x[i] = newStr[i] - 13;
+    }
+    }
+    var final = [];
+    for (var i = 0;i < x.length; i++){
+    final[i] = String.fromCharCode(x[i]);}//num to letters
+
+    console.log(newStr);
+}
+rot13("SERR PBQR PNZC");
+
+
 function getIndexToIns(arr, num) {
   //1st. sort arr from smallest - largest. 2nd push num into arr. then return num index to num.
     arr.push(num);
