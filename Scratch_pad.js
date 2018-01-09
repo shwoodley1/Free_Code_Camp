@@ -1,3 +1,13 @@
+function titleCase(str) {
+var words = str.toLowerCase().split(' ');
+ for (var i = 0; i < words.length; i++){
+     words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+ }
+console.log(words.join(' '));
+}
+titleCase("I'm a little tea pot");
+
+
 findLongestWord("The quick brown fox jumped over the lazy dog");
 
 function findLongestWord(str){
