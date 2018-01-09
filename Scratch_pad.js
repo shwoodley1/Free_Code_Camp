@@ -1,3 +1,15 @@
+function mutation(arr) {
+arr1 = arr[0].toLowerCase().split("").sort();
+arr2 = arr[1].toLowerCase().split("").sort();
+for (var i = 0; i < arr2.length; i++){
+    if (arr1.indexOf(arr2[i])===-1)
+        console.log(false);
+}
+   console.log (true);
+     }
+mutation(["Mary", "mmatry"]);
+
+
 function chunkArrayInGroups(arr, size) {
  answer = [];
    for (var i = 0; 0 < arr.length; i++){
