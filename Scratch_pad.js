@@ -1,3 +1,13 @@
+function getIndexToIns(arr, num) {
+  //1st. sort arr from smallest - largest. 2nd push num into arr. then return num index to num.
+    arr.push(num);
+    arr.sort(function(a, b){return a-b});
+    indexNum = arr.indexOf(num);
+ console.log(indexNum);
+}
+getIndexToIns([2, 20, 10, 45], 19);
+
+
 function mutation(arr) {
 arr1 = arr[0].toLowerCase().split("").sort();
 arr2 = arr[1].toLowerCase().split("").sort();
