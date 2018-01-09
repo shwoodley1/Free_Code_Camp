@@ -1,3 +1,7 @@
+function num(){
+    
+}
+
 function sumAll(arr) {
  
   var highNum = Math.max(arr[0], arr[1]);
