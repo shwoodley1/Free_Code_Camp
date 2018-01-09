@@ -1,3 +1,15 @@
+function chunkArrayInGroups(arr, size) {
+ answer = [];
+   for (var i = 0; 0 < arr.length; i++){
+    answer.push(arr.slice(0, size));
+       arr = arr.slice(size);
+   }
+console.log(answer);
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 1);
+
+
 var dots = "...";
 function truncateString(str, num) {
  if(num <= 3){
