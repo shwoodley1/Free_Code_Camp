@@ -1,3 +1,15 @@
+var dots = "...";
+function truncateString(str, num) {
+ if(num <= 3){
+     return str.slice(0,  num) + dots;
+ }else{
+     return str.slice(0, num - 3) + dots;
+ }
+return str;
+}
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
+
+
 function repeatStringNumTimes(str, num) {
  if (num < 0) return "";
   return str.repeat(num);
