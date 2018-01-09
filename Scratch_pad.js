@@ -1,3 +1,16 @@
+function sumAll(arr) {
+ 
+  var highNum = Math.max(arr[0], arr[1]);
+  var lowNum = Math.min(arr[0], arr[1]);
+  var num = [];
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  for(var i = 0; i <= (highNum - lowNum); i++){
+    num[i] = lowNum + i  
+}
+  console.log (num.reduce(reducer));
+}
+sumAll([10, 5]);
+
 
 function rot13(str) { // LBH QVQ VG!
     var newStr = [];
