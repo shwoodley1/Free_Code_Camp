@@ -1,3 +1,13 @@
+function largestOfFour(arr) {
+   for(var i = 0; i < arr.length; i++){
+ arr[i] = arr[i].sort(function(a,b){return b - a;}).shift(0);
+}
+   return arr;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+
 function titleCase(str) {
 var words = str.toLowerCase().split(' ');
  for (var i = 0; i < words.length; i++){
