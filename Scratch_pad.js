@@ -1,3 +1,11 @@
+function repeatStringNumTimes(str, num) {
+ if (num < 0) return "";
+  return str.repeat(num);
+}
+
+repeatStringNumTimes("*", 9);
+
+
 function confirmEnding(str, target) {
 
   str = str.substr(-target.length);
