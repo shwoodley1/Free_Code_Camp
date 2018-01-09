@@ -1,3 +1,12 @@
+function confirmEnding(str, target) {
+
+  str = str.substr(-target.length);
+ num = (str === target);
+ console.log(num);
+}
+confirmEnding("Bastian", "tian");
+
+
 function largestOfFour(arr) {
    for(var i = 0; i < arr.length; i++){
  arr[i] = arr[i].sort(function(a,b){return b - a;}).shift(0);
